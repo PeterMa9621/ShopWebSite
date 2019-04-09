@@ -2,7 +2,7 @@ var xmlHttp;
 
 function searchName(name) {
     if(name.length<=0){
-        document.getElementById("name_result").innerHTML = "";
+        document.getElementById("name_result").innerHTML = "A";
         return;
     }
 

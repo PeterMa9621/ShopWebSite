@@ -8,7 +8,7 @@ if(isset($_POST["name"])){
 
 <h1 align="center"><?php $title ?></h1>
 
-<form action="/CodeIgniter/index.php/users/login" method="post">
+<form action="/CodeIgniter/index.php/login/login" method="post">
     UserName: <label><input type="text" name="name"
                             value=<?php echo $name ?>></label><br>
     <?php if($name!=null && $name!="peter"){echo "Error!<br>";} ?>
@@ -16,7 +16,7 @@ if(isset($_POST["name"])){
     <input type="submit" name="submit" value="login">
 </form>
 
-<form action="register.html" method="get">
+<form action="/CodeIgniter/index.php/register/index" method="get">
     <input type="submit" value="Register">
 </form>
 
