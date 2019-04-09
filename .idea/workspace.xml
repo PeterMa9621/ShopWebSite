@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f9b16bd-7710-4a54-afb5-3bbcbb61fba4" name="Default Changelist" comment="" />
+    <list default="true" id="9f9b16bd-7710-4a54-afb5-3bbcbb61fba4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeIgniter/application/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/CodeIgniter/application/config/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeIgniter/application/controllers/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/CodeIgniter/application/controllers/Users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeIgniter/application/models/UserModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/CodeIgniter/application/models/UserModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeIgniter/application/views/pages/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/CodeIgniter/application/views/pages/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeIgniter/application/views/pages/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/CodeIgniter/application/views/pages/login.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/CodeIgniter/composer.json</pharConfigPath>
   </component>
   <component name="DatabaseView">
@@ -30,17 +39,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CodeIgniter/application/controllers/Pages.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
+            <state relative-caret-position="57">
               <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CodeIgniter/application/views/pages/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+            <state relative-caret-position="57">
+              <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -48,17 +57,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CodeIgniter/application/views/pages/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+            <state relative-caret-position="209">
+              <caret line="14" column="63" lean-forward="true" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CodeIgniter/application/controllers/Login.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CodeIgniter/application/controllers/Users.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="53" lean-forward="true" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+            <state relative-caret-position="152">
+              <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -66,53 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CodeIgniter/application/models/UserModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CodeIgniter/application/controllers/Users.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="10" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CodeIgniter/application/views/pages/users.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Login/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="17" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CodeIgniter/application/views/templates/footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CodeIgniter/application/controllers/Welcome.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+            <state>
+              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -126,6 +90,9 @@
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -157,12 +124,13 @@
         <option value="$PROJECT_DIR$/CodeIgniter/application/controllers/UsersController.php" />
         <option value="$PROJECT_DIR$/CodeIgniter/application/models/User.php" />
         <option value="$PROJECT_DIR$/CodeIgniter/application/views/templates/footer.php" />
+        <option value="$PROJECT_DIR$/CodeIgniter/application/views/pages/users.php" />
+        <option value="$PROJECT_DIR$/CodeIgniter/application/controllers/Login.php" />
+        <option value="$PROJECT_DIR$/CodeIgniter/application/config/config.php" />
+        <option value="$PROJECT_DIR$/CodeIgniter/application/views/pages/home.php" />
+        <option value="$PROJECT_DIR$/CodeIgniter/application/views/pages/login.php" />
         <option value="$PROJECT_DIR$/CodeIgniter/application/models/UserModel.php" />
         <option value="$PROJECT_DIR$/CodeIgniter/application/controllers/Users.php" />
-        <option value="$PROJECT_DIR$/CodeIgniter/application/views/pages/users.php" />
-        <option value="$PROJECT_DIR$/CodeIgniter/application/views/pages/login.php" />
-        <option value="$PROJECT_DIR$/CodeIgniter/application/controllers/Login.php" />
-        <option value="$PROJECT_DIR$/CodeIgniter/application/views/pages/home.php" />
       </list>
     </option>
   </component>
@@ -172,100 +140,75 @@
     </servers>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="180" />
-    <option name="y" value="30" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="179" />
+    <option name="y" value="29" />
+    <option name="width" value="1401" />
+    <option name="height" value="1001" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="LoginSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LoginSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="ShopWebSite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShopWebSite" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="LoginSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LoginSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="ShopWebSite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShopWebSite" type="462c0819:PsiDirectoryNode" />
               <item name="CodeIgniter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="LoginSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LoginSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="ShopWebSite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShopWebSite" type="462c0819:PsiDirectoryNode" />
               <item name="CodeIgniter" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="LoginSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LoginSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="ShopWebSite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShopWebSite" type="462c0819:PsiDirectoryNode" />
               <item name="CodeIgniter" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="LoginSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LoginSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="ShopWebSite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShopWebSite" type="462c0819:PsiDirectoryNode" />
               <item name="CodeIgniter" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="LoginSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LoginSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="ShopWebSite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShopWebSite" type="462c0819:PsiDirectoryNode" />
               <item name="CodeIgniter" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="LoginSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LoginSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="ShopWebSite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ShopWebSite" type="462c0819:PsiDirectoryNode" />
               <item name="CodeIgniter" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="LoginSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LoginSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="CodeIgniter" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LoginSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LoginSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="CodeIgniter" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LoginSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LoginSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="CodeIgniter" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LoginSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LoginSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="Login" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="G:/Program Files/EasyPHP-Devserver-17/eds-www/data" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
@@ -289,7 +232,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="EasyPhp" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="EasyPhp" start_url="/Login/login.php">
+    <configuration name="EasyPhp" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="EasyPhp" start_url="/CodeIgniter/index.php/login">
       <method v="2" />
     </configuration>
   </component>
@@ -307,17 +250,18 @@
       <workItem from="1554399849222" duration="13720000" />
       <workItem from="1554481496075" duration="3913000" />
       <workItem from="1554750342434" duration="6746000" />
+      <workItem from="1554785567847" duration="4531000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26509000" />
+    <option name="totallyTimeSpent" value="31040000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1563" height="845" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18496802" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19269103" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -329,7 +273,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="File Transfer" order="9" visible="true" weight="0.24702059" />
+      <window_info anchor="bottom" id="File Transfer" order="9" visible="true" weight="0.24684432" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
@@ -347,58 +291,14 @@
     <entry file="file://$PROJECT_DIR$/Utils/AjaxUtil.php" />
     <entry file="file://G:/Program Files/EasyPHP-Devserver-17/eds-www/application/config/config.php" />
     <entry file="file://G:/Program Files/EasyPHP-Devserver-17/eds-www/application/config/database.php" />
-    <entry file="file://G:/Program Files/EasyPHP-Devserver-17/eds-www/CodeIgniter/system/core/CodeIgniter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2703" />
-      </provider>
-    </entry>
-    <entry file="file://G:/Program Files/EasyPHP-Devserver-17/eds-www/CodeIgniter/system/core/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-732" />
-      </provider>
-    </entry>
-    <entry file="file://G:/Program Files/EasyPHP-Devserver-17/eds-www/CodeIgniter/application/config/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="74" selection-start-line="7" selection-start-column="74" selection-end-line="7" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://G:/Program Files/EasyPHP-Devserver-17/eds-www/CodeIgniter/application/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://G:/Program Files/EasyPHP-Devserver-17/eds-www/CodeIgniter/application/views/welcome_message.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://G:/Program Files/EasyPHP-Devserver-17/eds-www/CodeIgniter/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4284">
-          <caret line="287" column="14" selection-start-line="287" selection-start-column="14" selection-end-line="287" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://G:/Program Files/EasyPHP-Devserver-17/eds-www/CodeIgniter/application/controllers/Welcome.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://G:/Program Files/EasyPHP-Devserver-17/eds-www/CodeIgniter/application/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://G:/Program Files/EasyPHP-Devserver-17/eds-www/CodeIgniter/system/core/CodeIgniter.php" />
+    <entry file="file://G:/Program Files/EasyPHP-Devserver-17/eds-www/CodeIgniter/system/core/Controller.php" />
+    <entry file="file://G:/Program Files/EasyPHP-Devserver-17/eds-www/CodeIgniter/application/config/routes.php" />
+    <entry file="file://G:/Program Files/EasyPHP-Devserver-17/eds-www/CodeIgniter/application/views/index.html" />
+    <entry file="file://G:/Program Files/EasyPHP-Devserver-17/eds-www/CodeIgniter/application/views/welcome_message.php" />
+    <entry file="file://G:/Program Files/EasyPHP-Devserver-17/eds-www/CodeIgniter/index.php" />
+    <entry file="file://G:/Program Files/EasyPHP-Devserver-17/eds-www/CodeIgniter/application/controllers/Welcome.php" />
+    <entry file="file://G:/Program Files/EasyPHP-Devserver-17/eds-www/CodeIgniter/application/config/config.php" />
     <entry file="file://$PROJECT_DIR$/CodeIgniter/application/views/pages/about.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -441,13 +341,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeIgniter/application/config/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CodeIgniter/index.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -472,24 +365,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeIgniter/application/controllers/Welcome.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CodeIgniter/system/database/DB_result.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-9861">
           <caret line="50" column="6" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CodeIgniter/application/views/templates/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -500,59 +379,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Login/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CodeIgniter/application/models/UserModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CodeIgniter/application/views/pages/users.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        <state relative-caret-position="57">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeIgniter/application/controllers/Users.php">
+    <entry file="file://$PROJECT_DIR$/CodeIgniter/application/views/templates/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="10" selection-end-column="5" />
+        <state relative-caret-position="19">
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeIgniter/application/controllers/Pages.php">
+    <entry file="file://$PROJECT_DIR$/CodeIgniter/application/controllers/Welcome.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
+        <state relative-caret-position="57">
           <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeIgniter/system/helpers/url_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-855" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeIgniter/application/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeIgniter/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-380">
+          <caret line="25" column="47" lean-forward="true" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CodeIgniter/application/controllers/Login.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login/login.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="53" lean-forward="true" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeIgniter/application/controllers/Pages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeIgniter/application/models/UserModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CodeIgniter/application/views/pages/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+        <state relative-caret-position="209">
+          <caret line="14" column="63" lean-forward="true" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CodeIgniter/application/views/pages/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+        <state relative-caret-position="57">
+          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeIgniter/application/controllers/Users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
         </state>
       </provider>
     </entry>
