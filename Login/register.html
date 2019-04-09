@@ -1,0 +1,33 @@
+<html lang="en">
+    <head>
+        <script src="searchUserName.js"></script>
+        <title></title>
+    </head>
+
+    <body>
+
+    <form>
+        UserName:
+        <input type="text" id="name"
+               onkeyup="searchName(this.value)">
+        <p><span id="name_result"></span></p>
+        Password:
+        <input type="text" id="psw"
+               onkeyup="checkPassword(this.value)">
+        <p><span id="psw_result"></span></p>
+    </form>
+
+
+
+    </body>
+</html>
+
+<script>
+    function checkPassword(str) {
+        let tips = "";
+        if(str.length<6){
+            tips = "<font color='#a52a2a'>Your password is less than six characters</font>";
+        }
+        document.getElementById("psw_result").innerHTML = tips;
+    }
+</script>
