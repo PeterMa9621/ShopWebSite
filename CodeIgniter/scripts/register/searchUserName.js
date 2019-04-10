@@ -2,6 +2,30 @@ var xmlHttp;
 
 function searchName(name) {
     if(name.length<=0){
+        document.getElementById("name_result").innerHTML = "";
+        return;
+    }
+
+    xmlHttp = getXmlHttpObject();
+    if(xmlHttp==null){
+        alert("Your browser does not support HTTP Request");
+        return;
+    }
+
+    var url = "../../index.php/register/checkusername/";
+
+    //var data = "num1="+$("num1").value+"&operate="+$("operate").value+"&num2="+$("num2").value;
+    var data = "name=" + name;
+    xmlHttp.open("POST", url, true);
+    xmlHttp.setRequestHeader("CONTENT-TYPE", "application/x-www-form-urlencoded");
+    xmlHttp.onreadystatechange = onStateChange;
+    xmlHttp.send(data);
+}
+
+//This method is using GET
+/*
+function searchName(name) {
+    if(name.length<=0){
         document.getElementById("name_result").innerHTML = "A";
         return;
     }
@@ -12,14 +36,14 @@ function searchName(name) {
         return;
     }
 
-    var url = "register.php";
+    var url = "http://127.0.0.1/CodeIgniter/register/checkusername/";
     url += "?name=" + name;
-    url += "&sid=" + Math.random();
-    xmlHttp.onreadystatechange = onStateChange;
-    xmlHttp.open("GET", url, true);
-    xmlHttp.send(null);
-}
 
+    xmlHttp.open("GET", url, true);
+    xmlHttp.onreadystatechange = onStateChange;
+    xmlHttp.send(data);
+}
+ */
 function onStateChange() {
     if(xmlHttp.readyState == 4 || xmlHttp.readyState == "complete"){
         document.getElementById("name_result").innerHTML = xmlHttp.responseText;

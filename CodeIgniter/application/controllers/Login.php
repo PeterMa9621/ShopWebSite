@@ -7,9 +7,15 @@ class Login extends CI_Controller
     {
         parent::__construct();
         $this->load->model("UserModel");
+        $this->load->helper("url_helper");
     }
 
     public function index(){
+        if($this->session->userdata('user')!=null){
+            $this->session->set_userdata('user', null);
+            redirect();
+            return;
+        }
         $data['title'] = "Login System";
         $this->load->view('templates/header', $data);
         $this->load->view('/pages/login', $data);
@@ -25,31 +31,20 @@ class Login extends CI_Controller
         if($_POST["submit"]=="login") {
             $uid = $_POST["name"];
             $psw = $_POST["psw"];
-            echo "Welcome, ", $uid;
-            $user = $this->UserModel->getUserById($uid);
-            if (empty($user)) {
-                echo "<script>alert('Wrong user or password!');history.back()</script>";
-                return;
-            }
-            if ($user["psw"] == $psw) {
-                $data['users'] = $this->UserModel->getUser();
-                $data['title'] = "See all users";
+
+            $succeed = $this->UserModel->login($uid, $psw);
+            if (!$succeed) {
+                echo "<script>history.back();alert('Wrong user or password!')</script>";
+            } else {
+                redirect("/pages/view");
+                /*
+                $data['title'] = "Home";
                 $this->load->view('templates/header', $data);
-                $this->load->view('pages/users', $data);
+                $this->load->view('pages/home', $data);
                 $this->load->view('templates/footer', $data);
-                return;
+                */
             }
-            echo "<script>alert('Wrong user or password!');history.back()</script>";
-            return;
         }
 
-        if($_POST["submit"]=="register"){
-            $data['users'] = $this->UserModel->getUser();
-            $data['title'] = "See all users";
-            $this->load->view('templates/header', $data);
-            $this->load->view('pages/about', $data);
-            $this->load->view('templates/footer', $data);
-            return;
-        }
     }
 }
