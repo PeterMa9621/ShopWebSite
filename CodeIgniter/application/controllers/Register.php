@@ -7,7 +7,7 @@ class Register extends CI_Controller
     {
         parent::__construct();
         $this->load->model("UserModel");
-
+        $this->load->helper("url_helper");
     }
 
     public function index($msg = ""){
@@ -22,8 +22,8 @@ class Register extends CI_Controller
         $uid = $this->input->post("name");
         #$uid = $_GET["name"];
         #echo $uid;
-        $result = $this->UserModel->checkUserName($uid);
-        echo $result;
+        $result = $this->UserModel->isUidAvailable($uid);
+        echo json_encode($result);
     }
 
     public function register(){
@@ -33,7 +33,7 @@ class Register extends CI_Controller
         $email = $this->input->post("email");
         $result = $this->UserModel->register($uid, $psw, $email);
         if($result){
-            redirect("/pages/home");
+            redirect("login/index");
         } else {
             $this->index("Failed to sign up this account!");
         }

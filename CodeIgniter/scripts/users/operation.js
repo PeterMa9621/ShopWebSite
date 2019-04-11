@@ -20,29 +20,35 @@ function operate(self, operateType) {
     submitType.setAttribute("type", "hidden");
     submitType.value = operateType;
     form.appendChild(submitType);
-    /*
+
     var submitButton = document.createElement("input");
-    submitButton.setAttribute("name", operateType);
+    submitButton.setAttribute("name", "submit");
+    submitButton.setAttribute("value", operateType);
     submitButton.setAttribute("type", "submit");
+    submitButton.hidden = true;
     form.appendChild(submitButton);
-     */
+
 
     document.body.appendChild(form);
-    form.submit();
+    submitButton.click();
 }
 
 function modify() {
+    document.getElementById("font").setAttribute("color", "blue");
+    document.getElementById("message").innerHTML = "Modifying...";
     $.ajax({
         type: "POST",
-        url: "../../index.php/users/modify",
+        url: "../users/modify",
         data: 'uid=' + $('#uid').val() + '&psw=' + $('#psw').val() + '&email=' + $('#email').val(),
 
         success:function (result) {
             //alert(result);
+            document.getElementById("font").setAttribute("color", "blue");
             document.getElementById("message").innerHTML = result;
             //$('#msg').innerHTML = result;
         },
         error: function () {
+            document.getElementById("font").setAttribute("color", "red");
             document.getElementById("message").innerHTML = "Something wrong";
         }
     });

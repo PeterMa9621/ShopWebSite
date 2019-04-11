@@ -33,7 +33,7 @@ class Users extends CI_Controller
     }
 
     public function detail(){
-        $submit = $this->input->post('submitType');
+        $submit = $this->input->post('submit');
         if($submit==null){
             show_error("You cannot view this page!");
             return;
@@ -43,18 +43,12 @@ class Users extends CI_Controller
         $data['user'] = $user;
         $data['title'] = 'View User Detail';
 
-        if($submit=="modify"){
-            $data['canModify'] = true;
+        if($submit=="detail"){
             $this->load->view('templates/header', $data);
             $this->load->view('pages/user_detail', $data);
             $this->load->view('templates/footer', $data);
-            return;
         } else {
-            $data['canModify'] = false;
-            $this->load->view('templates/header', $data);
-            $this->load->view('pages/user_detail', $data);
-            $this->load->view('templates/footer', $data);
-            return;
+            show_404();
         }
     }
 

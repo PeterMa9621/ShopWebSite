@@ -5,17 +5,22 @@
     $uid = $user['uid'];
     $psw = $user['psw'];
     $email = $user['email'];
-    if($canModify){
-        echo '<form method="post" action="/CodeIgniter/index.php/users/modify">';
-        echo '<input type="text" readonly="readonly" id="uid" value="', $uid, '">';
-        echo '<input type="text" id="psw" value="', $psw, '">';
-        echo '<input type="text" id="email" value="', $email, '">';
-        echo '<p><span id="message"></span></p>';
-        echo '<p><input type="button" value="Modify" onclick="modify()"></p>';
-        echo '</form>';
-    } else {
-        echo $uid, ", ", $psw, ", ", $email;
-    }
+
+    echo '<div align="center">';
+
+    echo '<table>';
+    echo '<form>';
+    echo '<tr><td><label>UserName:</label><input type="text" id="uid" readonly="readonly" value="', $uid , '"></td></tr>';
+    echo '<tr><td><label>Password:</label><input type="text" id="psw" value="', $psw , '"></td></tr>';
+    echo '<tr><td><label>Email:</label><input type="text" id="email" value="', $email , '"></td></tr>';
+    echo '<tr><td><font id="font" color="blue"><span id="message"></span></font></td></tr>';
+    echo '<tr><td><input type="button" value="Modify" onclick="modify()"></td></tr>';
+    echo '</form>';
+    echo '</table>';
+
+
+    echo '</div>';
+
     /*
     $data=array(
         'name' =>'url',

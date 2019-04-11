@@ -19,18 +19,22 @@ class UserModel extends CI_Model
         return $query->row_array();
     }
 
-    public function checkUserName($uid){
+    public function isUidAvailable($uid){
         $result = $this->getUserById($uid);
-        $response = "";
+        $response = true;
         if(!empty($result)){
-            $response = "<font color='#a52a2a'>The user name has already existed!</font>";
+            $response = false;
         }
         return $response;
     }
 
     public function register($uid, $psw, $email){
-        $sql = "INSERT INTO users (uid, psw, email) VALUES (?, ?, ?)";
-        return $this->db->query($sql, array($uid, $psw, $email));
+        if($this->isUidAvailable($uid)){
+            $sql = "INSERT INTO users (uid, psw, email) VALUES (?, ?, ?)";
+            return $this->db->query($sql, array($uid, $psw, $email));
+        } else {
+            return false;
+        }
     }
 
     public function login($uid, $psw){

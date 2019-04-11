@@ -1,9 +1,12 @@
 var xmlHttp;
 
 function searchName(name) {
+    document.getElementById("register").hidden = true;
     if(name.length<=0){
         document.getElementById("name_result").innerHTML = "";
         return;
+    } else {
+        document.getElementById("name_result").innerHTML = "Checking username...";
     }
 
     xmlHttp = getXmlHttpObject();
@@ -12,7 +15,7 @@ function searchName(name) {
         return;
     }
 
-    var url = "../../index.php/register/checkusername/";
+    var url = "../register/checkusername/";
 
     //var data = "num1="+$("num1").value+"&operate="+$("operate").value+"&num2="+$("num2").value;
     var data = "name=" + name;
@@ -46,7 +49,14 @@ function searchName(name) {
  */
 function onStateChange() {
     if(xmlHttp.readyState == 4 || xmlHttp.readyState == "complete"){
-        document.getElementById("name_result").innerHTML = xmlHttp.responseText;
+        if(xmlHttp.responseText == "true"){
+            document.getElementById("name_result").innerHTML = "<font color='blue'>The user name is available!</font>";
+            document.getElementById("register").hidden = false;
+        } else {
+            document.getElementById("name_result").innerHTML = "<font color='#a52a2a'>The user name has already existed!</font>";
+            document.getElementById("register").hidden = true;
+        }
+
     }
 }
 
