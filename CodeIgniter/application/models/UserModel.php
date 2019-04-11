@@ -49,4 +49,9 @@ class UserModel extends CI_Model
         $sql = "DELETE FROM users WHERE users.uid = ?";
         return $this->db->query($sql, array($uid));
     }
+
+    public function update($uid, $data){
+        $sql = "UPDATE users SET psw = ?, email = ? WHERE users.uid = '".$uid."'";
+        return $this->db->query($sql, $data);
+    }
 }
