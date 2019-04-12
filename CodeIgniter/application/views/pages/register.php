@@ -33,7 +33,7 @@
             </tr>
             <tr>
                 <td>
-                    <button type="button" id="register" hidden="hidden" onclick="signUp()">Sign up</button>
+                    <input type="button" id="register" hidden="hidden" value="Sign up" onclick="signUp()">
                 </td>
             </tr>
         </table>

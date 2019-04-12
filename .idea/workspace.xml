@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f9b16bd-7710-4a54-afb5-3bbcbb61fba4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeIgniter/application/controllers/Register.php" beforeDir="false" afterPath="$PROJECT_DIR$/CodeIgniter/application/controllers/Register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeIgniter/application/controllers/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/CodeIgniter/application/controllers/Users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeIgniter/application/models/UserModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/CodeIgniter/application/models/UserModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeIgniter/application/views/pages/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/CodeIgniter/application/views/pages/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeIgniter/application/views/pages/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/CodeIgniter/application/views/pages/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CodeIgniter/application/views/pages/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/CodeIgniter/application/views/pages/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeIgniter/application/views/pages/user_detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/CodeIgniter/application/views/pages/user_detail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeIgniter/application/views/pages/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/CodeIgniter/application/views/pages/users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeIgniter/application/views/templates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/CodeIgniter/application/views/templates/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeIgniter/scripts/register/searchUserName.js" beforeDir="false" afterPath="$PROJECT_DIR$/CodeIgniter/scripts/register/searchUserName.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeIgniter/scripts/register/signUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/CodeIgniter/scripts/register/signUp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeIgniter/scripts/users/operation.js" beforeDir="false" afterPath="$PROJECT_DIR$/CodeIgniter/scripts/users/operation.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CodeIgniter/application/views/pages/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="42" selection-start-column="42" selection-end-column="42" />
+            <state relative-caret-position="268">
+              <caret line="35" column="85" selection-start-line="35" selection-start-column="85" selection-end-line="35" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -105,7 +92,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CodeIgniter/scripts/users/operation.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="173">
@@ -198,13 +185,13 @@
         <option value="$PROJECT_DIR$/CodeIgniter/scripts/register/searchUserName.js" />
         <option value="$PROJECT_DIR$/CodeIgniter/application/controllers/Register.php" />
         <option value="$PROJECT_DIR$/CodeIgniter/application/controllers/Users.php" />
-        <option value="$PROJECT_DIR$/CodeIgniter/application/views/pages/register.php" />
         <option value="$PROJECT_DIR$/CodeIgniter/application/views/pages/login.php" />
         <option value="$PROJECT_DIR$/CodeIgniter/application/views/pages/home.php" />
         <option value="$PROJECT_DIR$/CodeIgniter/application/views/pages/user_detail.php" />
         <option value="$PROJECT_DIR$/CodeIgniter/application/views/templates/header.php" />
         <option value="$PROJECT_DIR$/CodeIgniter/application/views/pages/users.php" />
         <option value="$PROJECT_DIR$/CodeIgniter/scripts/users/operation.js" />
+        <option value="$PROJECT_DIR$/CodeIgniter/application/views/pages/register.php" />
       </list>
     </option>
   </component>
@@ -213,7 +200,7 @@
       <server host="127.0.0.1" id="34723bcb-0363-4775-86c7-00aab9f0ebfc" name="EasyPhp" />
     </servers>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="64" />
     <option name="y" value="11" />
     <option name="width" value="1402" />
@@ -369,12 +356,12 @@
       <workItem from="1554785567847" duration="4531000" />
       <workItem from="1554837948470" duration="27197000" />
       <workItem from="1554911100500" duration="18077000" />
-      <workItem from="1555013109833" duration="8629000" />
+      <workItem from="1555013109833" duration="8707000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84943000" />
+    <option name="totallyTimeSpent" value="85021000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -386,7 +373,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1563" height="845" extended-state="7" />
+    <frame x="-7" y="-7" width="1563" height="845" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14352159" />
@@ -651,13 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeIgniter/application/views/pages/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="42" selection-start-column="42" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CodeIgniter/application/views/pages/user_detail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -683,6 +663,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
           <caret line="43" column="35" lean-forward="true" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeIgniter/application/views/pages/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="35" column="85" selection-start-line="35" selection-start-column="85" selection-end-line="35" selection-end-column="85" />
         </state>
       </provider>
     </entry>
