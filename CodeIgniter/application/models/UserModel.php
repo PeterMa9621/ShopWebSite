@@ -16,6 +16,9 @@ class UserModel extends CI_Model
 
     public function getUserById($uid){
         $query = $this->db->get_where("users", array('uid' => $uid));
+        if($query==null){
+            return null;
+        }
         return $query->row_array();
     }
 
@@ -39,7 +42,7 @@ class UserModel extends CI_Model
 
     public function login($uid, $psw){
         $user = $this->getUserById($uid);
-        if (empty($user)) {
+        if ($user==null) {
             return false;
         }
         if($user["psw"] == $psw){

@@ -13,6 +13,10 @@
                     <label>UserName:</label>
                     <input type="text" id="name" name="name"
                            onkeyup="searchName(this.value)">
+                </td>
+            </tr>
+            <tr>
+                <td>
                     <label id="name_result"></label>
                 </td>
             </tr>
@@ -21,6 +25,10 @@
                     <label>Password:</label>
                     <input type="text" id="psw" name="psw"
                            onkeyup="checkPassword(this.value)">
+                </td>
+            </tr>
+            <tr>
+                <td>
                     <label id="psw_result"></label>
                 </td>
             </tr>
@@ -28,6 +36,10 @@
                 <td>
                     <label>Email:</label>
                     <input type="text" id="email" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
                     <label id="email_result"></label>
                 </td>
             </tr>

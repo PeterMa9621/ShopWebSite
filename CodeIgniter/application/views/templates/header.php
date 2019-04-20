@@ -52,6 +52,9 @@
         color: white;
     }
 </style>
+
+<script type="text/javascript" src="<?php echo base_url();?>scripts/jquery-3.3.1.min.js"></script>
+
 <body>
 
 <!-- The variable title comes from $data['title'] -->

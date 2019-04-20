@@ -19,7 +19,12 @@ class Register extends CI_Controller
     }
 
     public function checkUserName(){
+        if($this->input->method()!="post"){
+            show_404();
+            return;
+        }
         $uid = $this->input->post("name");
+
         #$uid = $_GET["name"];
         #echo $uid;
         $result = $this->UserModel->isUidAvailable($uid);
@@ -27,8 +32,12 @@ class Register extends CI_Controller
     }
 
     public function register(){
+        if($this->input->method()!="post"){
+            show_404();
+            return;
+        }
         $uid = $this->input->post("name");
-        echo $uid;
+
         $psw = $this->input->post("psw");
         $email = $this->input->post("email");
         $result = $this->UserModel->register($uid, $psw, $email);

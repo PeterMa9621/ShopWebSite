@@ -7,6 +7,7 @@ class Pages extends CI_Controller
     {
         parent::__construct();
         $this->load->model("UserModel");
+        $this->load->helper("url_helper");
     }
 
     public function view($page = 'home'){

@@ -1,5 +1,5 @@
 <script type="text/javascript" src="<?php echo base_url();?>scripts/users/operation.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>scripts/jquery-3.3.1.min.js"></script>
+
 <?php
     $this->load->helper('form');
     $uid = $user['uid'];

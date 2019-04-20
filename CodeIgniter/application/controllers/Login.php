@@ -23,28 +23,20 @@ class Login extends CI_Controller
     }
 
     public function login(){
-        if(!isset($_POST["submit"])){
+        if($this->input->method()!="post"){
             show_404();
             return;
         }
 
-        if($_POST["submit"]=="login") {
-            $uid = $_POST["name"];
-            $psw = $_POST["psw"];
+        $uid = $_POST["name"];
+        $psw = $_POST["psw"];
 
-            $succeed = $this->UserModel->login($uid, $psw);
-            if (!$succeed) {
-                echo "<script>history.back();alert('Wrong user or password!')</script>";
-            } else {
-                redirect("/pages/view");
-                /*
-                $data['title'] = "Home";
-                $this->load->view('templates/header', $data);
-                $this->load->view('pages/home', $data);
-                $this->load->view('templates/footer', $data);
-                */
-            }
+        $succeed = $this->UserModel->login($uid, $psw);
+        if (!$succeed) {
+            echo "<script>alert('Wrong user or password!');history.back()</script>";
+        } else {
+            //echo "<script>window.location.href=\"\"</script>";
+            redirect("/pages/view");
         }
-
     }
 }

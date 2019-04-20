@@ -15,6 +15,7 @@ class Users extends CI_Controller
             show_error("You have not logged in!");
             return;
         }
+
         $data['msg'] = $msg;
         $data['users'] = $this->UserModel->getUser();
         $data['title'] = "All users";
@@ -24,6 +25,11 @@ class Users extends CI_Controller
     }
 
     public function delete(){
+        if($this->input->method()!="post"){
+            show_404();
+            return;
+        }
+
         $submit = $this->input->post('submitType');
         $uid = $this->input->post('uid');
         if($submit=="delete"){
@@ -33,11 +39,13 @@ class Users extends CI_Controller
     }
 
     public function detail(){
-        $submit = $this->input->post('submit');
-        if($submit==null){
-            show_error("You cannot view this page!");
+        if($this->input->method()!="post"){
+            show_404();
             return;
         }
+
+        $submit = $this->input->post('submit');
+
         $uid = $this->input->post('uid');
         $user = $this->UserModel->getUserById($uid);
         $data['user'] = $user;
@@ -52,24 +60,12 @@ class Users extends CI_Controller
         }
     }
 
-    public function modify1(){
-        if($this->input->post('submit')==null){
+    public function modify(){
+        if($this->input->method()!="post"){
             show_404();
             return;
         }
-        $uid = $this->input->post('uid');
-        $psw = $this->input->post('psw');
-        $email = $this->input->post('email');
-        $modifiedData = array($psw, $email);
-        $succeed = $this->UserModel->update($uid, $modifiedData);
-        if($succeed){
-            $this->index("succeed");
-            return;
-        }
-        $this->index("error");
-    }
 
-    public function modify(){
         $uid = $this->input->post('uid');
         $psw = $this->input->post('psw');
         $email = $this->input->post('email');
