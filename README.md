@@ -1,4 +1,4 @@
-# ShopWebSite (Version 0.1)
+# SimpleWebSite (Version 0.1)
 ## Currently it is just a simple login register system
 
 # Environment
