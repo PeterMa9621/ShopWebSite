@@ -16,8 +16,14 @@ class Users extends CI_Controller
             return;
         }
 
+        $uid = $this->input->get("uid");
+
+        if($uid==null){
+            $data['users'] = $this->UserModel->getUser();
+        } else {
+            $data['users'] = $this->UserModel->search($uid);
+        }
         $data['msg'] = $msg;
-        $data['users'] = $this->UserModel->getUser();
         $data['title'] = "All users";
         $this->load->view('templates/header', $data);
         $this->load->view('pages/users', $data);

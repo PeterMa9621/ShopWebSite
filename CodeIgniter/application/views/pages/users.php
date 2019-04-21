@@ -20,7 +20,18 @@
 ?>
 
 <div align="center">
+
     <table>
+        <tr>
+            <form action="<?php echo base_url()?>users/index" method="get">
+                <td>
+                    <input type="text" name="uid" id="uid">
+                </td>
+                <td>
+                    <input type="submit">
+                </td>
+            </form>
+        </tr>
         <tr>
             <th>UserName</th>
             <th>Email</th>

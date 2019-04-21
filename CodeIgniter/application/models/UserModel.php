@@ -45,7 +45,7 @@ class UserModel extends CI_Model
         if ($user==null) {
             return false;
         }
-        if($user["psw"] == $psw){
+        if($user['psw'] == $psw){
             $this->session->set_userdata("user", $user);
             return true;
         }
@@ -60,5 +60,11 @@ class UserModel extends CI_Model
     public function update($uid, $data){
         $sql = "UPDATE users SET psw = ?, email = ? WHERE users.uid = '".$uid."'";
         return $this->db->query($sql, $data);
+    }
+
+
+    public function search($uid){
+        $this->db->like("uid", $uid);
+        return $this->db->get("users")->result_array();
     }
 }
