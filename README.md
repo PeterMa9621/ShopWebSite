@@ -1,4 +1,5 @@
-# ShopWebSite - Currently it is just a simple login register system
+# ShopWebSite
+## Currently it is just a simple login register system
 
 # Environment
 ### PHP
