@@ -56,7 +56,7 @@ abstract class CI_DB_driver {
 	 * Data Source Name / Connect string
 	 *
 	 * @var	string
-	 */initialize
+	 */
 	public $dsn;
 
 	/**
@@ -399,7 +399,7 @@ abstract class CI_DB_driver {
 
 		// Connect to the database and set the connection ID
 		$this->conn_id = $this->db_connect($this->pconnect);
-        // mjy Log needs to be added
+        // mjy Log needs to be added here
 		// No connection resource? Check if there is a failover else throw an error
 		if ( ! $this->conn_id)
 		{
