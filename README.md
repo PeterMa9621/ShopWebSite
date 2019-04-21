@@ -22,10 +22,10 @@
 * In this page, you can simpliy click NEW to create a new database which named "Shop".
 * After create the database, click it, then in the right hand, you can see a button named SQL, here, you can run SQL query.
 * Install database script: Create table users (uid char(20) PRIMARY KEY, psw char(30), email text).
-## Clone it
+# Clone it
 * Go to the directory that you installed EasyPHP, there is a folder named "eds-www". This folder is used to contain all your php websites.
 * Go to the folder named "eds-www".
 * Run command "git clone https://github.com/PeterMa9621/ShopWebSite.git".
 * For now, all my content should be in the folder named "eds-www".
-## Run the website
+# Run the website
 * Go to http://127.0.0.1/CodeIgniter/, you can see the home page.
