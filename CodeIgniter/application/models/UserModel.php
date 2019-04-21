@@ -1,6 +1,14 @@
 <?php
 
-
+// ViewModel and DataModel
+// No factory pattern, cannot do unit tests
+// Unit tests
+// Functional testing - ViewModel
+// Bootstrap - css layout - Facebook
+// How to implement an interface in php - Generic
+// No logging : try file logging and window event logging
+// window event: 事件查看器
+// No main layout - leftbar implementation
 class UserModel extends CI_Model
 {
     public function __construct()
