@@ -6,8 +6,9 @@ class Login extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->load->model("UserModel");
+        $this->load->model("/User/UserModel");
         $this->load->helper("url_helper");
+        $this->load->model("/User/UserService");
     }
 
     public function index(){
@@ -31,7 +32,7 @@ class Login extends CI_Controller
         $uid = $_POST["name"];
         $psw = $_POST["psw"];
 
-        $succeed = $this->UserModel->login($uid, $psw);
+        $succeed = $this->UserService->login($uid, $psw);
         if (!$succeed) {
             echo "<script>alert('Wrong user or password!');history.back()</script>";
         } else {

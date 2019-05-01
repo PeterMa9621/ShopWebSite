@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="746731b3-fd2b-4680-a6d3-23a75a36c398" name="phpWebSite" url="http://127.0.0.1:8080">
-        <fileTransfer port="0" mountedRoot="G:\Program Files\EasyPHP-Devserver-17\eds-www" accessType="MOUNT" />
+        <fileTransfer port="0" mountedRoot="F:\Program Files (x86)\EasyPHP-Devserver-17\eds-www" accessType="MOUNT" />
       </webServer>
     </option>
   </component>
