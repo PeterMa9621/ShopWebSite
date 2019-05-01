@@ -6,26 +6,24 @@ class Users extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->load->model("/User/UserModel");
+        $this->load->model("/User/UserService");
         $this->load->helper("url_helper");
     }
 
     public function index($msg = ""){
-        if($this->session->userdata('user')==null){
+        if($this->UserService->isLogin()){
             show_error("You have not logged in!");
             return;
         }
 
         $uid = $this->input->get("uid");
 
-        if($uid==null){
-            $data['users'] = $this->UserModel->getUser();
-        } else {
-            $data['users'] = $this->UserModel->search($uid);
-        }
+        $data['users'] = $this->UserService->getUsers($uid);
+
         $data['msg'] = $msg;
         $data['title'] = "All users";
         $this->load->view('templates/header', $data);
+        $this->load->view('templates/leftbar', $data);
         $this->load->view('pages/users', $data);
         $this->load->view('templates/footer', $data);
     }
@@ -35,12 +33,10 @@ class Users extends CI_Controller
             show_404();
             return;
         }
-
-        $submit = $this->input->post('submitType');
         $uid = $this->input->post('uid');
-        if($submit=="delete"){
-            $this->UserModel->delete($uid);
-        }
+
+        $this->UserService->deleteUser($uid);
+
         redirect("/users/index");
     }
 
@@ -50,20 +46,15 @@ class Users extends CI_Controller
             return;
         }
 
-        $submit = $this->input->post('submit');
-
         $uid = $this->input->post('uid');
-        $user = $this->UserModel->getUserById($uid);
+        $user = $this->UserService->getUser($uid);
         $data['user'] = $user;
         $data['title'] = 'View User Detail';
 
-        if($submit=="detail"){
-            $this->load->view('templates/header', $data);
-            $this->load->view('pages/user_detail', $data);
-            $this->load->view('templates/footer', $data);
-        } else {
-            show_404();
-        }
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/leftbar', $data);
+        $this->load->view('pages/user_detail', $data);
+        $this->load->view('templates/footer', $data);
     }
 
     public function modify(){
@@ -76,12 +67,6 @@ class Users extends CI_Controller
         $psw = $this->input->post('psw');
         $email = $this->input->post('email');
 
-        $modifiedData = array($psw, $email);
-        $succeed = $this->UserModel->update($uid, $modifiedData);
-        if($succeed){
-            echo "Modified successfully!";
-            return;
-        }
-        echo "Failed to modify this user!";
+        echo $this->UserService->modifyUser($uid, $psw, $email);
     }
 }

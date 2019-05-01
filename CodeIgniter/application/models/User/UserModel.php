@@ -2,13 +2,13 @@
 
 // ViewModel and DataModel
 // No factory pattern, cannot do unit tests
-// Unit tests
+// Unit tests - done
 // Functional testing - ViewModel
 // Bootstrap - css layout - Facebook
 // How to implement an interface in php - Generic
-// No logging : try file logging and window event logging
-// window event: 事件查看器
-// No main layout - leftbar implementation
+// No logging : try file logging and window event logging - done
+// window event: 事件查看器 - done
+// No main layout - leftbar implementation - done with navigation bar
 class UserModel extends CI_Model
 {
     public function __construct()
@@ -17,7 +17,7 @@ class UserModel extends CI_Model
         $this->load->library("DataController");
     }
 
-    public function getUser(){
+    public function getUsers(){
         $query = $this->db->get('users');
         return $query->result_array();
     }
@@ -70,9 +70,12 @@ class UserModel extends CI_Model
         return $this->db->query($sql, $data);
     }
 
-
     public function search($uid){
         $this->db->like("uid", $uid);
         return $this->db->get("users")->result_array();
+    }
+
+    public function logout(){
+        $this->session->set_userdata("user", null);
     }
 }

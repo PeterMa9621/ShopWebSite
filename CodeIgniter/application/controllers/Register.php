@@ -6,7 +6,7 @@ class Register extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->load->model("/User/UserModel");
+        $this->load->model("/User/UserService");
         $this->load->helper("url_helper");
     }
 
@@ -14,6 +14,7 @@ class Register extends CI_Controller
         $data["title"] = "Register";
         $data["msg"] = $msg;
         $this->load->view('templates/header', $data);
+        $this->load->view('templates/leftbar', $data);
         $this->load->view('/pages/register', $data);
         $this->load->view('templates/footer', $data);
     }
@@ -25,10 +26,8 @@ class Register extends CI_Controller
         }
         $uid = $this->input->post("name");
 
-        #$uid = $_GET["name"];
-        #echo $uid;
-        $result = $this->UserModel->isUidAvailable($uid);
-        echo json_encode($result);
+        $result = $this->UserService->checkUserName($uid);
+        echo $result;
     }
 
     public function register(){
@@ -37,10 +36,11 @@ class Register extends CI_Controller
             return;
         }
         $uid = $this->input->post("name");
-
         $psw = $this->input->post("psw");
         $email = $this->input->post("email");
-        $result = $this->UserModel->register($uid, $psw, $email);
+
+        $result = $this->UserService->register($uid, $psw, $email);
+
         if($result){
             redirect("login/index");
         } else {

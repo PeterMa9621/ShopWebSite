@@ -2,6 +2,7 @@
 <head>
     <title>
         <?php
+            $this->load->helper('url_helper');
             if(isset($title)){
                 echo $title;
             }
@@ -56,12 +57,8 @@
 <script type="text/javascript" src="<?php echo base_url();?>scripts/jquery-3.3.1.min.js"></script>
 
 <body>
+<!--
+    This part is the navigation bar
+-->
 
-<!-- The variable title comes from $data['title'] -->
-<h1 align="center">
-    <?php
-        if(isset($title)){
-            echo $title;
-        }
-    ?>
-</h1>
+

@@ -6,7 +6,6 @@ class Pages extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->load->model("/User/UserModel");
         $this->load->helper("url_helper");
     }
 
@@ -18,6 +17,7 @@ class Pages extends CI_Controller
             $data['user'] = $this->session->userdata('user');
 
             $this->load->view('templates/header', $data);
+            $this->load->view('templates/leftbar', $data);
             $this->load->view('/pages/' . $page, $data);
             $this->load->view('templates/footer', $data);
         }
